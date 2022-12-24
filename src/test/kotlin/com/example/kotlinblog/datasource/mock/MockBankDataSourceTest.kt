@@ -11,7 +11,7 @@ class MockBankDataSourceTest{
         //given
 
         //when
-        val banks = mockDataSource.getBanks()
+        val banks = mockDataSource.retrieveBanks()
 
         //then
         assertThat(banks).isNotEmpty
@@ -22,7 +22,7 @@ class MockBankDataSourceTest{
         //given
 
         //when
-        val banks = mockDataSource.getBanks()
+        val banks = mockDataSource.retrieveBanks()
 
         //then
         assertThat(banks).allMatch {it.accountNumber.isNotBlank()}
