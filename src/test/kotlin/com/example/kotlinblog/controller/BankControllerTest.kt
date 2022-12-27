@@ -14,7 +14,7 @@ import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.get
 import org.springframework.test.web.servlet.post
-
+// nested 사용
 @SpringBootTest
 @AutoConfigureMockMvc
 class BankControllerTest @Autowired constructor(
